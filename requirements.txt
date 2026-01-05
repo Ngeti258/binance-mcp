@@ -1,0 +1,24 @@
+# Core Trading System Dependencies
+# Installation: pip install -r requirements.txt
+
+# TradingView Integration
+tradingview-screener>=1.0.0
+
+# Data Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Technical Analysis (if needed for additional indicators)
+ta>=0.11.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Logging and Utilities
+python-dateutil>=2.8.2
+pytz>=2024.1
+
+# Optional: For advanced features
+# matplotlib>=3.7.0  # For plotting charts
+# plotly>=5.18.0     # For interactive charts
+# scipy>=1.11.0      # For statistical analysis

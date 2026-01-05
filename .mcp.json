@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "binance-mcp": {
+      "command": "node",
+      "args": [
+        "./build/index.js"
+      ],
+      "env": {
+        "BINANCE_API_KEY": "HadQaLaJI5jUiyrpOfYOsNzSw3XOicSYXqnsdCsj52ExHGJaFN9X7DEWThSTtig8",
+        "BINANCE_API_SECRET": "fcxt2OUEVSEuYwioRHSclV0G6sTpyifiuMDubKhK5Ph3zFvU8X3pFuFeyBJJroAs"
+      }
+    },
+    "x-mcp-server": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\ngeti\\Downloads\\x-mcp-server\\build\\index.js"
+      ],
+      "env": {
+        "X_API_KEY": "1pvvciYDQSQ95Z27d52lOGEaa",
+        "X_API_KEY_SECRET": "G7PVnne7KwcxMjeSjAdwSKKgb9DdSMUzHdKcBvbgjLk0IKg4Us",
+        "X_ACCESS_TOKEN": "1987134822758985728-AzWdBnedTgO9oaRNiZ3sC5ZUGH48XK",
+        "X_ACCESS_TOKEN_SECRET": "aFkITn7LgVQ7naYY7wQSRhEpM7K2K0EKE1eXzxQ5qLDQs"
+      }
+    },
+    "currency-conversion": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://currency-mcp.wesbos.com/sse"]
+    },
+    "tradingview": {
+      "command": "C:\\Users\\ngeti\\Downloads\\binance-mcp\\mcp-tradingview-server\\.venv\\Scripts\\mcp-tradingview.exe",
+      "args": []
+    },
+    "google-sheets": {
+      "command": "C:\\Users\\ngeti\\.local\\bin\\uvx.exe",
+      "args": ["mcp-google-sheets@latest"],
+      "env": {
+        "SERVICE_ACCOUNT_PATH": "C:\\Users\\ngeti\\Downloads\\binance-mcp\\.serviceAccountKey.json",
+        "DRIVE_FOLDER_ID": "1dRnEQt0iRb225sI5Lr_J79T5XzzKxhuK"
+      }
+    },
+    "crypto-news": {
+      "command": "C:\\Users\\ngeti\\.local\\bin\\uv.exe",
+      "args": ["--directory", "C:\\Users\\ngeti\\Downloads\\binance-mcp\\crypto-news-mcp", "run", "main.py"],
+      "env": {
+        "NEWS_API_KEY": "pub_9eb30ad3b73d4cc38129c5160bc996dc"
+      }
+    },
+    "crypto-liquidations": {
+      "command": "C:\\Users\\ngeti\\.local\\bin\\uv.exe",
+      "args": ["--directory", "C:\\Users\\ngeti\\Downloads\\binance-mcp\\crypto-liquidations-mcp", "run", "main.py"]
+    }
+  }
+}

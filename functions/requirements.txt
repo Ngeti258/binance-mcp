@@ -1,0 +1,5 @@
+firebase-admin
+functions-framework
+tradingview-screener
+python-binance
+pandas
